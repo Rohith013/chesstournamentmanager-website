@@ -3,83 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terms of Service for Chess Tournament Manager.">
+    <meta name="description" content="Terms of Service for Chess Tournament Manager (v1.1.3) developed by Game Wings Support. Covers license terms, acceptable use, FIDE rule disclaimers, local backups, and ad-supported usage.">
+    <meta name="theme-color" content="#182C5A">
+
+    <meta property="og:site_name" content="Chess Tournament Manager">
+    <meta property="og:title" content="Terms of Service | Chess Tournament Manager">
+    <meta property="og:description" content="Terms and conditions governing use of the Chess Tournament Manager Android application and official website.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Rohith013.github.io/chesstournamentmanager-website/terms.html">
+    <meta property="og:image" content="https://Rohith013.github.io/chesstournamentmanager-website/Images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms of Service | Chess Tournament Manager">
+    <meta name="twitter:description" content="Terms and conditions for Chess Tournament Manager by Game Wings Support.">
+
     <link rel="canonical" href="https://Rohith013.github.io/chesstournamentmanager-website/terms.html">
     <link rel="icon" type="image/png" href="Images/logo.png">
-    
+
     <title>Terms of Service | Chess Tournament Manager</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>document.documentElement.classList.add('js-enabled');</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
         <div class="container nav-container">
             <a href="index.html" class="logo-container" aria-label="Chess Tournament Manager Home">
-                <img src="Images/logo.png" alt="Chess Tournament Manager Logo">
+                <img src="Images/logo.png" alt="Chess Tournament Manager Logo" width="38" height="38">
                 <span>Chess Tournament Manager</span>
             </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
-                <i class="ph ph-list"></i>
+
+            <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+                <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon icon-close" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </button>
-            
-            <nav>
-                <ul class="nav-links">
+
+            <nav aria-label="Primary Navigation">
+                <ul id="primary-nav" class="nav-links">
                     <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#formats">Formats</a></li>
                     <li><a href="index.html#screenshots">Gallery</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
                     <li><a href="support.html">Support</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html" class="active">Terms</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-header fade-in">
             <div class="container">
                 <h1>Terms of Service</h1>
-                <p>Last Updated: September 27, 2026</p>
+                <p>Rules and conditions governing the use of Chess Tournament Manager and this website.</p>
+                <div class="page-meta-badges">
+                    <span class="meta-badge">Applies to: Version 1.1.3</span>
+                    <span class="meta-badge">Last Updated: November 26, 2026</span>
+                    <span class="meta-badge">Previous Revision: September 27, 2026</span>
+                </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
             <div class="container content-container">
+
+                <nav class="toc-nav" aria-label="Terms Sections">
+                    <div class="toc-nav-title">On This Page</div>
+                    <ul class="toc-links">
+                        <li><a href="#acceptance">1. Acceptance</a></li>
+                        <li><a href="#acceptable-use">2. Acceptable Use</a></li>
+                        <li><a href="#ip">3. Intellectual Property</a></li>
+                        <li><a href="#data-arbiter">4. User Data, Backups &amp; Arbiter Duty</a></li>
+                        <li><a href="#ads-third-party">5. Advertising &amp; Third-Party Services</a></li>
+                        <li><a href="#warranties-liability">6. Warranties &amp; Liability</a></li>
+                        <li><a href="#availability-termination">7. Availability &amp; Termination</a></li>
+                        <li><a href="#changes-contact">8. Changes &amp; Contact</a></li>
+                    </ul>
+                </nav>
+
                 <div class="content-block">
                     <h2>Welcome to Chess Tournament Manager</h2>
-                    <p>These terms and conditions outline the rules and regulations for the use of the Chess Tournament Manager application, developed by Game Wings Support.</p>
-                    
-                    <h3>1. Acceptance of Terms</h3>
-                    <p>By downloading, installing, or using the Chess Tournament Manager application, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, then you may not access the application.</p>
+                    <p>These Terms of Service ("Terms") outline the rules and conditions governing your download, installation, and use of the <strong>Chess Tournament Manager</strong> Android application and this companion website, provided by <strong>Game Wings Support</strong>.</p>
+                </div>
 
-                    <h3>2. Acceptable Use</h3>
-                    <p>You agree to use the application only for its intended purpose: organizing, managing, and tracking chess tournaments. You must not use the application for any illegal or unauthorized purpose. You must not attempt to decompile, reverse engineer, or extract the source code of the application.</p>
+                <div id="acceptance" class="content-block">
+                    <h2>1. Acceptance of Terms &amp; Eligibility</h2>
+                    <p>By downloading, installing, accessing, or using the Chess Tournament Manager application or website, you agree to be bound by these Terms and acknowledge our <a href="privacy.html">Privacy Policy</a>. If you do not agree to any part of these Terms, do not install or use the application.</p>
+                    <p>You must be legally permitted to accept these Terms under the laws applicable to you, or use the application under the supervision of a parent, guardian, club administrator, or educational organizer.</p>
+                </div>
 
-                    <h3>3. Ownership and Intellectual Property</h3>
-                    <p>The application, including its original content, features, functionality, and design, is owned by Game Wings Support and is protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, belong to the developer. You may not extract or attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages or make derivative versions.</p>
+                <div id="acceptable-use" class="content-block">
+                    <h2>2. Permitted &amp; Acceptable Use</h2>
+                    <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use Chess Tournament Manager on Android devices you own or control for organizing, managing, pairing, scoring, and reporting chess tournaments.</p>
+                    <p>You agree not to:</p>
+                    <ul>
+                        <li>Use the application or exported reports for any unlawful, fraudulent, or unauthorized purpose;</li>
+                        <li>Attempt to decompile, reverse engineer, disassemble, or extract the source code of the application, except to the extent permitted by mandatory applicable law;</li>
+                        <li>Modify, repackage, redistribute, sell, rent, or create unauthorized derivative versions of the application binary; or</li>
+                        <li>Interfere with advertising delivery controls or generate artificial/invalid ad interactions.</li>
+                    </ul>
+                </div>
 
-                    <h3>4. User Data and Backups</h3>
-                    <p>All data generated by the application (including but not limited to player lists, pairings, and results) is stored locally on your device. You are solely responsible for maintaining backups of your data using the provided export features. Game Wings Support is not responsible for any loss of data.</p>
+                <div id="ip" class="content-block">
+                    <h2>3. Ownership and Intellectual Property</h2>
+                    <p>The application—including its software code, visual design, interface layout, branding, logos, documentation, and bundled assets (excluding third-party open-source packages and fonts used under their respective licenses)—remains the property of Game Wings Support and is protected by applicable copyright, trademark, database right, and intellectual property laws.</p>
+                    <p>Your own tournament records, player rosters, match results, and exported PDF, CSV, Excel, or backup files remain your content.</p>
+                </div>
 
-                    <h3>5. Limitation of Liability</h3>
-                    <p>In no event shall Game Wings Support, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the application.</p>
-                    <p>Chess Tournament Manager is provided on an "AS IS" and "AS AVAILABLE" basis. While we strive to ensure that pairings, standings, and tournament data are accurately calculated, we do not warrant the absolute accuracy or reliability of the algorithms (e.g., Round Robin, Knockout). We shall not be held liable for any disputes, damages, or losses (financial or otherwise) arising from tournament results, data corruption, or app crashes. It is the user's responsibility to independently verify tournament results if used for official or professional rated events.</p>
+                <div id="data-arbiter" class="content-block">
+                    <h2>4. User Data, Local Backups &amp; Arbiter Verification</h2>
+                    <ul>
+                        <li><strong>Local Storage &amp; Backups:</strong> All tournament, team, player, round, and result data entered into Chess Tournament Manager is stored locally on your device. Because there is no automatic developer cloud synchronization, you are solely responsible for creating and safeguarding <code>.ctmbackup</code> files and exported reports before uninstalling, switching devices, or clearing app storage. Game Wings Support is not liable for loss of local data.</li>
+                        <li><strong>Tournament Pairing, Tie-Breaks &amp; FIDE Alignment Disclaimer:</strong> Chess Tournament Manager implements Individual Swiss, Individual Round Robin, Individual Double Round Robin, Individual Knockout, Team Swiss, Team Round Robin, and Team Knockout workflows, including logic designed in accordance with FIDE Handbook C.04 (1 Feb 2026) and C.07 Art 12 (1 Mar 2026). However, the application is <strong>not officially certified, verified, or endorsed by FIDE</strong>. Tournament organizers and arbiters are solely responsible for independently verifying pairings, colour assignments, board lineups, manual adjudications, and final tie-break standings before publishing or submitting results for officially rated or competitive events.</li>
+                    </ul>
+                </div>
 
-                    <h3>6. Advertisements and Features</h3>
-                    <p>Chess Tournament Manager is provided free of charge and is supported by in-app advertisements. By using the app, you agree that we may place such advertising and promotions on the Service. The manner, mode, and extent of such advertising and promotions are subject to change without specific notice to you. We are not responsible for the content, products, or services offered by third-party advertisers.</p>
+                <div id="ads-third-party" class="content-block">
+                    <h2>5. Free Ad-Supported Service &amp; Third-Party Services</h2>
+                    <p>Chess Tournament Manager is currently provided free of charge and is supported by in-app advertisements served through Google AdMob (including Native ads, Interstitial ads, and optional Rewarded ads prior to generating reports). By using the application, you acknowledge that ads may be displayed during use and that ad frequency, placement, and availability may change across releases without individual notice.</p>
+                    <p>Distribution via Google Play, ad serving via Google AdMob, consent workflows via Google UMP, and any external apps you choose when sharing exported files are operated by third parties under their own terms and privacy policies. Game Wings Support is not responsible for third-party advertisements, external services, or websites linked from this site.</p>
+                </div>
 
-                    <h3>7. Termination</h3>
-                    <p>We may terminate or suspend your access to the application immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                <div id="warranties-liability" class="content-block">
+                    <h2>6. Disclaimer of Warranties &amp; Limitation of Liability</h2>
+                    <p>Chess Tournament Manager is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+                    <p>While we test pairing, knockout bracket, tie-break, and export algorithms extensively, we do not warrant error-free or uninterrupted operation across every tournament edge case or device configuration. To the fullest extent permitted by applicable law, Game Wings Support and its contributors shall not be liable for any indirect, incidental, special, consequential, or punitive damages—including loss of tournament data, rating disputes, prizes, scheduling disruption, or goodwill—arising from use of or inability to use the application.</p>
+                </div>
 
-                    <h3>8. Contact Us</h3>
-                    <p>If you have any questions about these Terms, please contact us at:</p>
+                <div id="availability-termination" class="content-block">
+                    <h2>7. Application Updates, Availability &amp; Termination</h2>
+                    <p>We may update, modify, pause distribution of, or discontinue features of Chess Tournament Manager at our discretion. Because the application operates locally without user accounts, your license to use the software terminates automatically if you breach these Terms, upon which you must stop using and uninstall the application.</p>
+                    <p>Sections relating to Intellectual Property, Arbiter Verification, Disclaimers, and Limitation of Liability survive termination.</p>
+                </div>
+
+                <div id="changes-contact" class="content-block">
+                    <h2>8. Applicable Law, Changes to Terms &amp; Contact</h2>
+                    <p>These Terms are intended to operate alongside any non-waivable statutory consumer protections that apply in your place of residence.</p>
+                    <p>We may revise these Terms from time to time by updating this page and changing the "Last Updated" date above. Continued use of the application after updated Terms are posted constitutes acceptance of the revised Terms.</p>
+                    <p>If you have questions regarding these Terms, contact Game Wings Support at:</p>
                     <p><strong>Email:</strong> <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></p>
                 </div>
+
             </div>
         </section>
     </main>
@@ -88,34 +165,48 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Chess Tournament Manager</h4>
-                    <p style="color: var(--text-body); font-size: 0.9rem;">Professional tournament organization software for clubs and arbiters.</p>
+                    <h2>Chess Tournament Manager</h2>
+                    <p>Offline-first chess tournament organization software designed for clubs, schools, academies, and arbiters.</p>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h2>Product</h2>
                     <ul class="footer-links">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="index.html#formats">Tournament Formats</a></li>
+                        <li><a href="index.html#features">Core Features</a></li>
+                        <li><a href="index.html#swiss-details">FIDE 2026 Rules</a></li>
+                        <li><a href="index.html#screenshots">App Gallery</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h2>Support &amp; App</h2>
                     <ul class="footer-links">
                         <li><a href="support.html">Support Center</a></li>
-                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="support.html#release-notes">Release Notes (v1.1.3)</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.chesstournamentmanager.app" target="_blank" rel="noopener noreferrer">Google Play Store</a></li>
+                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">Website on GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2>Legal</h2>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#data-deletion">Data Deletion Guide</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Game Wings Support. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; opacity: 0.7;">Version 1.0.1 | Built with Flutter</p>
+                <p class="footer-bottom-sub">Version 1.1.3 &middot; Built with Flutter &middot; Independent software (not officially affiliated with FIDE)</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

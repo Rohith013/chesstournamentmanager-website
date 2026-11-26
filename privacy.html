@@ -3,94 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Chess Tournament Manager. Learn how we protect your data.">
+    <meta name="description" content="Privacy Policy for Chess Tournament Manager (v1.1.3) by Game Wings Support. Details local SQLite storage, Google AdMob and UMP consent, permissions, and local data deletion.">
+    <meta name="theme-color" content="#182C5A">
+
+    <meta property="og:site_name" content="Chess Tournament Manager">
+    <meta property="og:title" content="Privacy Policy | Chess Tournament Manager">
+    <meta property="og:description" content="How Chess Tournament Manager handles local tournament storage, Google AdMob advertising, UMP consent, and local data deletion.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Rohith013.github.io/chesstournamentmanager-website/privacy.html">
+    <meta property="og:image" content="https://Rohith013.github.io/chesstournamentmanager-website/Images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy | Chess Tournament Manager">
+    <meta name="twitter:description" content="Privacy disclosures and data deletion guidance for Chess Tournament Manager.">
+
     <link rel="canonical" href="https://Rohith013.github.io/chesstournamentmanager-website/privacy.html">
     <link rel="icon" type="image/png" href="Images/logo.png">
-    
+
     <title>Privacy Policy | Chess Tournament Manager</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>document.documentElement.classList.add('js-enabled');</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
         <div class="container nav-container">
             <a href="index.html" class="logo-container" aria-label="Chess Tournament Manager Home">
-                <img src="Images/logo.png" alt="Chess Tournament Manager Logo">
+                <img src="Images/logo.png" alt="Chess Tournament Manager Logo" width="38" height="38">
                 <span>Chess Tournament Manager</span>
             </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
-                <i class="ph ph-list"></i>
+
+            <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+                <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon icon-close" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </button>
-            
-            <nav>
-                <ul class="nav-links">
+
+            <nav aria-label="Primary Navigation">
+                <ul id="primary-nav" class="nav-links">
                     <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#formats">Formats</a></li>
                     <li><a href="index.html#screenshots">Gallery</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
                     <li><a href="support.html">Support</a></li>
                     <li><a href="privacy.html" class="active">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-header fade-in">
             <div class="container">
                 <h1>Privacy Policy</h1>
-                <p>Last Updated: September 27, 2026</p>
+                <p>Clear disclosures about local device storage, Google AdMob advertising, consent controls, and data removal.</p>
+                <div class="page-meta-badges">
+                    <span class="meta-badge">Applies to: Version 1.1.3</span>
+                    <span class="meta-badge">Last Updated: November 26, 2026</span>
+                    <span class="meta-badge">Previous Revision: September 27, 2026</span>
+                </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
             <div class="container content-container">
+
+                <nav class="toc-nav" aria-label="Privacy Policy Sections">
+                    <div class="toc-nav-title">On This Page</div>
+                    <ul class="toc-links">
+                        <li><a href="#local-data">1. Local Data &amp; No Accounts</a></li>
+                        <li><a href="#analytics-telemetry">2. Telemetry &amp; Crash Logs</a></li>
+                        <li><a href="#advertising">3. Google AdMob &amp; Ads</a></li>
+                        <li><a href="#gdpr-ccpa">4. GDPR, UMP &amp; US Privacy</a></li>
+                        <li><a href="#permissions">5. App Permissions &amp; Files</a></li>
+                        <li><a href="#data-deletion">6. Data Retention &amp; Deletion</a></li>
+                        <li><a href="#children">7. Children's Privacy</a></li>
+                        <li><a href="#international">8. International Transfers &amp; Changes</a></li>
+                        <li><a href="#contact">9. Contact</a></li>
+                    </ul>
+                </nav>
+
                 <div class="content-block">
-                    <h2>Our Commitment to Privacy</h2>
-                    <p>At Game Wings Support, we prioritize the privacy and security of your data. The Chess Tournament Manager application is designed with a strong focus on offline functionality and local data ownership.</p>
-                    
-                    <h3>1. Data Collection & Storage</h3>
+                    <h2>Overview &amp; Privacy Commitment</h2>
+                    <p>This Privacy Policy explains how <strong>Game Wings Support</strong> ("we", "us", or "our") handles information in connection with the <strong>Chess Tournament Manager</strong> Android application (package ID <code>com.chesstournamentmanager.app</code>) and its companion official website.</p>
+                    <p>Chess Tournament Manager is built around local device ownership of tournament records, paired with transparent disclosures regarding third-party advertising services used to provide the application free of charge.</p>
+                </div>
+
+                <div id="local-data" class="content-block">
+                    <h2>1. Information Stored Locally &amp; No User Accounts</h2>
                     <ul>
-                        <li><strong>No User Account Required:</strong> You do not need to create an account, provide an email address, or log in to use the application.</li>
-                        <li><strong>Local Storage:</strong> All tournament data, player profiles, pairings, and settings are stored locally on your device.</li>
-                        <li><strong>No Cloud Synchronization:</strong> In Version 1.0.1, there is no automatic cloud synchronization or backup to remote servers. Your data stays entirely on your device.</li>
-                        <li><strong>Exported Files:</strong> Any PDF reports or backup files you generate remain strictly under your control. You choose when and how to share them.</li>
+                        <li><strong>No Account or Login Required:</strong> You do not register, create a profile, sign in, or submit an email address or password to use Chess Tournament Manager. Game Wings Support does not operate any account database or authentication server for this application.</li>
+                        <li><strong>On-Device SQLite Database:</strong> All data you enter—including tournament names, venues, start/end dates, player names, ratings, optional FIDE IDs, federations, titles, team rosters, per-round lineups, pairings, results, tie-break preferences, and activity undo logs—is stored locally on your device inside a private SQLite database alongside local app preferences (<code>SharedPreferences</code>).</li>
+                        <li><strong>No Automatic Cloud Synchronization:</strong> Version 1.1.3 does not upload, mirror, or synchronize your tournaments or player registries to servers controlled by Game Wings Support.</li>
+                        <li><strong>User-Initiated Exports &amp; Backups:</strong> When you export a PDF, CSV, Excel (<code>.xlsx</code>), or <code>.ctmbackup</code> JSON file, the file is generated locally on your device. It is only transmitted externally if and when you actively share or save it through your device's Android Share sheet or file picker.</li>
+                        <li><strong>Email Support Correspondence:</strong> If you email <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a>, we receive your email address and the message contents you choose to send solely to respond to your request.</li>
                     </ul>
+                </div>
 
-                    <h3>2. Analytics and Tracking</h3>
+                <div id="analytics-telemetry" class="content-block">
+                    <h2>2. First-Party Analytics &amp; Diagnostic Logs</h2>
+                    <p>Game Wings Support does <strong>not</strong> integrate third-party behavioral analytics tools (such as Google Firebase Analytics) or third-party developer crash reporting SDKs (such as Crashlytics or Sentry) inside the application, and we do not operate a custom telemetry server.</p>
+                    <p>Note that third-party advertising and platform services—specifically Google AdMob (described below) and the Google Play Store / Android operating system diagnostics managed by Google under your device settings—collect standard technical, diagnostic, and interaction data under Google's own privacy policies.</p>
+                </div>
+
+                <div id="advertising" class="content-block">
+                    <h2>3. Advertising &amp; Third-Party Service Providers (Google AdMob)</h2>
+                    <p>To offer Chess Tournament Manager free of charge, Version 1.1.3 uses the <strong>Google Mobile Ads SDK (Google AdMob)</strong> to load and display advertisements on Android:</p>
                     <ul>
-                        <li><strong>Log Data and Analytics:</strong> Whenever you use our Service, in a case of an error in the app, we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol ("IP") address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</li>
+                        <li><strong>Ad Formats Used:</strong> In-feed Native ad cards (displayed on player, tournament, standings, settings, and export screens), Interstitial ads (when creating a tournament or finishing a tournament), and Rewarded ads (shown when exporting PDF, CSV, or Excel tournament reports when an ad is available; creating a <code>.ctmbackup</code> backup file does not trigger a rewarded ad).</li>
+                        <li><strong>Information Collected by Google Mobile Ads SDK:</strong> Depending on your region and consent settings, Google and its advertising partners may collect and process device identifiers (including the Android Advertising ID), IP address (which may indicate general geographic location), app set ID, device/OS version, ad impression/click events, and SDK crash or performance diagnostics.</li>
+                        <li><strong>Contextual Metadata:</strong> Ad requests generated by the app include chess-category contextual keywords and a contextual URL hint (<code>https://www.chess.com</code>) solely to request contextually relevant advertisements from AdMob; the app does not browse external websites on your behalf.</li>
                     </ul>
-
-                    <h3>3. Advertisements</h3>
+                    <p>For full details on how Google processes advertising data, please review Google's policies and controls:</p>
                     <ul>
-                        <li><strong>Third-Party Services and Advertising:</strong> Our app uses third-party services that may collect information used to identify you. Specifically, we use Google AdMob to display advertisements within the app. Google, as a third-party vendor, uses cookies and device identifiers (such as the Android Advertising ID) to serve ads based on your past visits to this app or other websites. You may opt out of personalized advertising by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google's Ads Settings</a>.<br><br>Link to the privacy policy of third-party service providers used by the app:<br>&bull; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy</a></li>
+                        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google Uses Information from Sites or Apps That Use Our Services</a></li>
+                        <li><a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google My Ad Center / Ad Personalization Settings</a></li>
                     </ul>
+                </div>
 
-                    <h3>4. GDPR & CCPA Consent</h3>
+                <div id="gdpr-ccpa" class="content-block">
+                    <h2>4. Consent Choices (EEA/UK GDPR &amp; US State Privacy / CCPA)</h2>
                     <ul>
-                        <li><strong>European Economic Area (EEA) and UK Users (GDPR):</strong> If you are a resident of the European Economic Area (EEA) or the UK, we use Google’s User Messaging Platform (UMP) to gather your consent before displaying personalized advertisements. You have the right to withdraw your consent or change your ad preferences at any time within the app settings or via your device's ad settings.</li>
-                        <li><strong>California Residents (CCPA):</strong> We do not "sell" your personal information in the traditional sense. However, the use of third-party advertising identifiers may be considered a "sale" under the California Consumer Privacy Act (CCPA). You can opt out of interest-based advertising by navigating to your device settings (e.g., "Opt out of Ads Personalization" on Android).</li>
+                        <li><strong>Google User Messaging Platform (UMP):</strong> When the app starts in regions where consent is required (including the European Economic Area and the United Kingdom), Google's UMP SDK checks consent status and presents a consent form before personalized ads are served.</li>
+                        <li><strong>Managing or Withdrawing Ad Consent:</strong> Version 1.1.3 does not yet include an in-app "Manage Ad Privacy" button inside the app's Settings screen. You can review, limit, or withdraw advertising personalization at any time by:
+                            <ul>
+                                <li>Adjusting your Android device settings (typically <em>Settings &rarr; Google &rarr; Ads</em> or <em>Settings &rarr; Privacy &rarr; Ads</em> to delete or reset your Advertising ID and opt out of ads personalization);</li>
+                                <li>Managing ad preferences via <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google My Ad Center</a>; or</li>
+                                <li>Clearing the application's storage via Android App Info (remember to export <code>.ctmbackup</code> files first, as clearing app storage deletes local tournaments) to reset stored UMP consent on your device.</li>
+                            </ul>
+                        </li>
+                        <li><strong>California &amp; US State Residents:</strong> Game Wings Support does not sell your personal tournament data. Third-party ad SDK identifier usage may constitute "sharing" or targeted advertising under applicable state laws such as the CCPA/CPRA; you can restrict ad personalization using Android's system ad controls described above.</li>
                     </ul>
+                </div>
 
-                    <h3>5. App Permissions</h3>
-                    <p>The application may request the following permissions on your device solely for core functionality:</p>
+                <div id="permissions" class="content-block">
+                    <h2>5. App Permissions &amp; Device Access</h2>
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Permission / Access</th>
+                                    <th>Purpose in Chess Tournament Manager</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code></td>
+                                    <td>Used solely to check connectivity, fetch Google UMP consent configuration, and request Google AdMob advertisements. Core pairing, standings, backup, and export engines operate offline.</td>
+                                </tr>
+                                <tr>
+                                    <td>Scoped File Picker &amp; Android Share Sheet</td>
+                                    <td>Used only when you explicitly choose to import/restore a <code>.ctmbackup</code> file or share an exported PDF, CSV, Excel, or backup file through temporary scoped cache directories.</td>
+                                </tr>
+                                <tr>
+                                    <td>Camera, Location, Contacts, Microphone</td>
+                                    <td><strong>Not requested or accessed.</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="data-deletion" class="content-block">
+                    <h2>6. Data Retention, Security &amp; Account / Data Deletion</h2>
+                    <p>Because Chess Tournament Manager has <strong>no user accounts and no cloud storage</strong>, Game Wings Support cannot access, view, recover, or remotely erase your local SQLite tournament database. You remain in complete direct control of local data deletion:</p>
                     <ul>
-                        <li><strong>Storage/Files:</strong> Required only to save PDF reports and backup files to your device's local storage.</li>
+                        <li><strong>Delete Specific Tournaments or Players:</strong> Open any tournament or open the Players registry inside the app and use the <strong>Delete</strong> action to remove individual records from the local SQLite database immediately.</li>
+                        <li><strong>Reset App Preferences:</strong> Open <strong>Settings &rarr; Reset Settings</strong> in the app to restore default theme, format, and export preferences.</li>
+                        <li><strong>Remove All App Data Locally:</strong> Uninstalling Chess Tournament Manager—or using Android <em>Settings &rarr; Apps &rarr; Chess Tournament Manager &rarr; Storage &rarr; Clear Storage / Clear Data</em>—permanently deletes the local SQLite database, undo logs, and stored UMP preferences from your device. Exported PDFs, spreadsheets, or <code>.ctmbackup</code> files you previously saved to Downloads or shared externally must be deleted manually by you.</li>
+                        <li><strong>Reset Advertising Identifiers:</strong> Reset or delete your Android Advertising ID at any time under Android device settings (<em>Settings &rarr; Google &rarr; Ads</em>).</li>
+                        <li><strong>Delete Support Emails:</strong> If you emailed us at <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a>, email correspondence is retained only as long as reasonably necessary to resolve your inquiry, and you may email us at any time to request deletion of prior support emails.</li>
                     </ul>
+                    <div class="callout-box">
+                        <strong>Data Safety Reminder:</strong> Because data is stored exclusively on-device, uninstalling the app or clearing storage without saving a <code>.ctmbackup</code> file permanently destroys your tournaments and rosters.
+                    </div>
+                </div>
 
-                    <h3>6. Children's Privacy</h3>
-                    <p>Our application does not knowingly collect any personally identifiable information from children under the age of 13. Since the app does not collect user data or transmit information over the internet, it is safe for users of all ages.</p>
+                <div id="children" class="content-block">
+                    <h2>7. Children's Privacy</h2>
+                    <p>Chess Tournament Manager is a general-audience tournament administration tool for clubs, schools, academies, and arbiters, and is <strong>not directed at children under the age of 13</strong> (or the equivalent minimum age of digital consent in your jurisdiction). Game Wings Support does not knowingly collect personal identifiable information from children.</p>
+                    <p>Although tournament organizers choose what player names and ratings they record locally on their own devices, the app does use Google AdMob and Google UMP over the internet when online. If you are a parent or guardian and believe a child has submitted personal information directly to us (such as via support email), please contact <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a> so we can promptly delete it.</p>
+                </div>
 
-                    <h3>7. Contact Information</h3>
-                    <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+                <div id="international" class="content-block">
+                    <h2>8. International Data Processing &amp; Policy Updates</h2>
+                    <ul>
+                        <li><strong>International Processing:</strong> While your local SQLite tournament data remains on your device, third-party ad requests and consent checks handled by Google AdMob / UMP may be processed on Google's servers in regions outside your home country in accordance with Google's privacy frameworks.</li>
+                        <li><strong>Updates to This Privacy Policy:</strong> We may update this Privacy Policy when application features, SDKs, or legal requirements change. Changes become effective when posted on this page with an updated "Last Updated" date. Previously, our September 27, 2026 revision documented Version 1.0.1 AdMob and UMP integration; this November 26, 2026 update reconciles telemetry wording, removes the inaccurate in-app consent-button statement, adds explicit local data deletion steps, and aligns disclosures with Version 1.1.3.</li>
+                    </ul>
+                </div>
+
+                <div id="contact" class="content-block">
+                    <h2>9. Contact Information</h2>
+                    <p>For questions about this Privacy Policy, data practices, or deletion requests regarding support emails, please contact:</p>
+                    <p><strong>Developer / Publisher:</strong> Game Wings Support</p>
                     <p><strong>Email:</strong> <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></p>
                 </div>
+
             </div>
         </section>
     </main>
@@ -99,34 +221,48 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Chess Tournament Manager</h4>
-                    <p style="color: var(--text-body); font-size: 0.9rem;">Professional tournament organization software for clubs and arbiters.</p>
+                    <h2>Chess Tournament Manager</h2>
+                    <p>Offline-first chess tournament organization software designed for clubs, schools, academies, and arbiters.</p>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h2>Product</h2>
                     <ul class="footer-links">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="index.html#formats">Tournament Formats</a></li>
+                        <li><a href="index.html#features">Core Features</a></li>
+                        <li><a href="index.html#swiss-details">FIDE 2026 Rules</a></li>
+                        <li><a href="index.html#screenshots">App Gallery</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h2>Support &amp; App</h2>
                     <ul class="footer-links">
                         <li><a href="support.html">Support Center</a></li>
-                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="support.html#release-notes">Release Notes (v1.1.3)</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.chesstournamentmanager.app" target="_blank" rel="noopener noreferrer">Google Play Store</a></li>
+                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">Website on GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2>Legal</h2>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#data-deletion">Data Deletion Guide</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Game Wings Support. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; opacity: 0.7;">Version 1.0.1 | Built with Flutter</p>
+                <p class="footer-bottom-sub">Version 1.1.3 &middot; Built with Flutter &middot; Independent software (not officially affiliated with FIDE)</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

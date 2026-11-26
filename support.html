@@ -3,106 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Support Center for Chess Tournament Manager. Get help, report bugs, and view release notes.">
+    <meta name="description" content="Support Center for Chess Tournament Manager (v1.1.3). Contact Game Wings Support, read v1.1.3 FIDE 2026 release notes, troubleshoot backups and exports, and report bugs.">
+    <meta name="theme-color" content="#182C5A">
+
+    <meta property="og:site_name" content="Chess Tournament Manager">
+    <meta property="og:title" content="Support Center | Chess Tournament Manager">
+    <meta property="og:description" content="Official help center, Version 1.1.3 release notes, backup/restore guidance, and bug reporting instructions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Rohith013.github.io/chesstournamentmanager-website/support.html">
+    <meta property="og:image" content="https://Rohith013.github.io/chesstournamentmanager-website/Images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Support Center | Chess Tournament Manager">
+    <meta name="twitter:description" content="Get support, read release notes, and manage local backups in Chess Tournament Manager v1.1.3.">
+
     <link rel="canonical" href="https://Rohith013.github.io/chesstournamentmanager-website/support.html">
     <link rel="icon" type="image/png" href="Images/logo.png">
-    
+
     <title>Support Center | Chess Tournament Manager</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>document.documentElement.classList.add('js-enabled');</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
         <div class="container nav-container">
             <a href="index.html" class="logo-container" aria-label="Chess Tournament Manager Home">
-                <img src="Images/logo.png" alt="Chess Tournament Manager Logo">
+                <img src="Images/logo.png" alt="Chess Tournament Manager Logo" width="38" height="38">
                 <span>Chess Tournament Manager</span>
             </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
-                <i class="ph ph-list"></i>
+
+            <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+                <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon icon-close" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </button>
-            
-            <nav>
-                <ul class="nav-links">
+
+            <nav aria-label="Primary Navigation">
+                <ul id="primary-nav" class="nav-links">
                     <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#formats">Formats</a></li>
                     <li><a href="index.html#screenshots">Gallery</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
                     <li><a href="support.html" class="active">Support</a></li>
                     <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="page-header fade-in">
             <div class="container">
                 <h1>Support Center</h1>
-                <p>How can we help you?</p>
+                <p>Technical help, release notes for Version 1.1.3, backup guidance, and bug reporting instructions.</p>
+                <div class="page-meta-badges">
+                    <span class="meta-badge">Current Version: 1.1.3</span>
+                    <span class="meta-badge">Updated: November 26, 2026</span>
+                </div>
             </div>
         </section>
 
         <section class="content-section fade-in">
             <div class="container content-container">
-                
-                <div class="content-block">
+
+                <nav class="toc-nav" aria-label="Support Sections">
+                    <div class="toc-nav-title">Quick Navigation</div>
+                    <ul class="toc-links">
+                        <li><a href="#contact-support">Contact Support</a></li>
+                        <li><a href="#release-notes">Release Notes (v1.1.3)</a></li>
+                        <li><a href="#known-notes">Known Notes &amp; Tips</a></li>
+                        <li><a href="#bug-reports">Bug Reports</a></li>
+                        <li><a href="privacy.html#data-deletion">Data Deletion Guide</a></li>
+                    </ul>
+                </nav>
+
+                <div id="contact-support" class="content-block">
                     <h2>Contact Support</h2>
-                    <p>If you have encountered a bug, have a feature request, or need assistance, please reach out to us. We are happy to help.</p>
-                    <p><strong>Email:</strong> <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></p>
+                    <p>If you encounter a pairing question, export issue, restore problem, or bug, please email Game Wings Support directly. Because Chess Tournament Manager stores data strictly on your device without server telemetry, describing your tournament setup helps us investigate quickly.</p>
+                    <p><strong>Support Email:</strong> <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></p>
+
+                    <div class="support-actions-row">
+                        <a href="mailto:gamewingssupport@gmail.com?subject=Chess%20Tournament%20Manager%20Support%20(v1.1.3)" class="btn btn-primary">Email Support</a>
+                        <button type="button" class="btn btn-subtle" data-copy-text="gamewingssupport@gmail.com" data-copy-status="copy-email-status">Copy Email Address</button>
+                        <span id="copy-email-status" class="copy-feedback" aria-live="polite"></span>
+                    </div>
+
                     <p><em>Expected response time: within 3–5 business days.</em></p>
                 </div>
 
-                <div class="content-block">
-                    <h2>Release Information</h2>
-                    <h3>Latest Version: 1.0.1</h3>
-                    
-                    <h4>Known Issues</h4>
-                    <p>Currently, there are no known major issues. If you find a bug, please email us with steps to reproduce it.</p>
+                <div id="release-notes" class="content-block">
+                    <h2>Release Information &amp; Changelog</h2>
 
-                    <h4>Release Notes (v1.0.1)</h4>
-                    
-                    <h5>New Features</h5>
+                    <h3>Latest Release: Version 1.1.3 (November 26, 2026)</h3>
                     <ul>
-                        <li>FIDE C.07 Dummy Opponent support</li>
-                        <li>Duplicate player names</li>
-                        <li>Restore Tournament improvements</li>
-                        <li>Player discard workflow</li>
+                        <li><strong>FIDE 2026 Individual Dutch Swiss (C.04.2 &amp; C.04.3, eff. 1 Feb 2026):</strong> Permanent <code>1..N</code> TPN assignment and SQLite persistence before Round 1 (Rating &rarr; FIDE Title &rarr; Alphabetical), unified S1/S2 pairing from Round 1 onward, heterogeneous MDP/Limbo/Remainder resolution, lexicographical S2 transpositions, Art 4.3.2 resident exchanges, C.04.2 Art 3.4 played-game-only colour history, strict <code>[C3]</code> non-topscorer colour protection vs final-round topscorers, and <code>[C2]</code>/<code>[C9]</code> PAB eligibility.</li>
+                        <li><strong>FIDE 2026 Team Knockout Tie-Breaks (C.07 Art 12, eff. 1 Mar 2026):</strong> Implemented tournament-wide Match Point and Game Point equality preconditions followed by configurable <strong>Board Count (12.1)</strong>, <strong>Top Board Results (12.2)</strong>, and <strong>Bottom Board Elimination (12.3)</strong> alongside four canonical arbiter adjudication methods (<em>Blitz Playoff</em>, <em>Armageddon</em>, <em>Drawing of Lots</em>, and <em>Arbiter Decision</em>).</li>
+                        <li><strong>Tie-Break Ordering &amp; Settings Persistence:</strong> Verified custom drag-and-drop tie-break priority ordering in Edit Tournament settings and live Riverpod standings recalculation.</li>
                     </ul>
-                    
-                    <h5>Improvements</h5>
+
+                    <h3>Major Platform Features Added Across Earlier Releases (v1.0.1 – v1.1.2)</h3>
                     <ul>
-                        <li>Improved Swiss pairing</li>
-                        <li>Better color balancing</li>
-                        <li>Improved withdrawal handling</li>
-                        <li>Enhanced restore workflow</li>
-                        <li>UI refinements</li>
-                    </ul>
-                    
-                    <h5>Stability</h5>
-                    <ul>
-                        <li>Numerous bug fixes</li>
-                        <li>Improved validation</li>
-                        <li>Better conflict resolution</li>
+                        <li><strong>Team Tournament Suite:</strong> Full support for <strong>Team Swiss (C.04.6)</strong> with permanent team TPN locking, <strong>Team Round Robin (B.02 Art 13.1)</strong> alternating board colours, configurable board counts and squad substitutes, per-round board lineups, and Team Knockout bracket synchronization.</li>
+                        <li><strong>Multi-Format Reports:</strong> Added <strong>CSV (UTF-8 BOM)</strong> and <strong>Excel (.xlsx)</strong> export engines alongside multilingual PDF rendering across 7 report scopes (Info Sheet, Registration List, Pairings &amp; Results, Cross Table, Round Standings, Final Rankings, Full Report).</li>
+                        <li><strong>Backup Schema v3 &amp; Duplicate Resolution:</strong> Enhanced <code>.ctmbackup</code> archive export/restore supporting schema versions 1–3 with pre-flight conflict detection to merge safe duplicates or resolve ambiguous player profiles.</li>
+                        <li><strong>Undo &amp; Organizer Tools:</strong> Added SQLite Activity Logs supporting Undo for result corrections, player withdrawals/reinstatements, tournament reopenings, setting edits, and round deletions/regenerations.</li>
+                        <li><strong>v1.0.1 Baseline Foundations:</strong> FIDE C.07 Dummy Opponent / VUR handling, duplicate player name handling, restore improvements, and discard protection.</li>
                     </ul>
                 </div>
 
-                <div class="content-block">
-                    <h2>Bug Reports & Feature Requests</h2>
-                    <p>When reporting a bug, please include the following information in your email to help us resolve it quickly:</p>
+                <div id="known-notes" class="content-block">
+                    <h2>Known Notes, Backups &amp; Data Deletion</h2>
                     <ul>
-                        <li>Your device model (e.g., Samsung Galaxy S23)</li>
-                        <li>Your Android version (e.g., Android 14)</li>
-                        <li>The app version (currently 1.0.1)</li>
-                        <li>A description of what you were trying to do when the issue occurred</li>
-                        <li>Steps to reproduce the issue</li>
+                        <li><strong>Back Up Before Uninstalling:</strong> There is no automatic cloud backup or account sync. Always use <em>Tournament &rarr; Share/Export &rarr; Export Backup</em> to save a <code>.ctmbackup</code> file externally before uninstalling or wiping app storage.</li>
+                        <li><strong>Legacy Team Knockout Upgrades:</strong> Pre-1.1.3 Team Knockout tournaments that already saved explicit Swiss tie-breaks retain their existing tie-break list in SQLite; open <em>Edit Settings &rarr; Add Tie-Break</em> to update them to FIDE C.07 Art 12 criteria, or create a new Team Knockout event to start with C.07 defaults automatically.</li>
+                        <li><strong>CSV vs PDF Script Support:</strong> PDF exports bundle Noto Sans fonts supporting Latin, Devanagari, Malayalam, Tamil, Bengali, and Arabic player names. While CSV exports include a UTF-8 BOM, spreadsheet viewers and CSV edge cases with certain non-Latin characters may render more reliably via Excel (<code>.xlsx</code>) or PDF export.</li>
+                        <li><strong>Account &amp; Data Deletion:</strong> Chess Tournament Manager uses no accounts. See our <a href="privacy.html#data-deletion">Data Deletion Guide</a> for deleting local tournaments, resetting settings, or resetting Android AdMob identifiers.</li>
                     </ul>
-                    <p>We also welcome feature requests! If there is a specific pairing rule, tie-break system, or export format you'd like to see, let us know.</p>
+                </div>
+
+                <div id="bug-reports" class="content-block">
+                    <h2>Bug Reports &amp; Feature Requests</h2>
+                    <p>When emailing a bug report to <a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a>, please include:</p>
+                    <ul>
+                        <li>Your Android device model (e.g., Samsung Galaxy M21)</li>
+                        <li>Your Android OS version (e.g., Android 12 or Android 14)</li>
+                        <li>Your app version (for example, <strong>1.1.3</strong>)</li>
+                        <li>Tournament format involved (e.g., Individual Swiss, Team Knockout)</li>
+                        <li>Clear steps to reproduce the issue (and, if safe to share, an exported <code>.ctmbackup</code> file of a sample test tournament)</li>
+                    </ul>
+                    <p>Feature requests for additional FIDE tie-breaks, report layouts, or tournament workflows are also welcome.</p>
                 </div>
 
             </div>
@@ -113,34 +155,48 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Chess Tournament Manager</h4>
-                    <p style="color: var(--text-body); font-size: 0.9rem;">Professional tournament organization software for clubs and arbiters.</p>
+                    <h2>Chess Tournament Manager</h2>
+                    <p>Offline-first chess tournament organization software designed for clubs, schools, academies, and arbiters.</p>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Legal</h4>
+                    <h2>Product</h2>
                     <ul class="footer-links">
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="index.html#formats">Tournament Formats</a></li>
+                        <li><a href="index.html#features">Core Features</a></li>
+                        <li><a href="index.html#swiss-details">FIDE 2026 Rules</a></li>
+                        <li><a href="index.html#screenshots">App Gallery</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Connect</h4>
+                    <h2>Support &amp; App</h2>
                     <ul class="footer-links">
                         <li><a href="support.html">Support Center</a></li>
-                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="support.html#release-notes">Release Notes (v1.1.3)</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.chesstournamentmanager.app" target="_blank" rel="noopener noreferrer">Google Play Store</a></li>
+                        <li><a href="https://github.com/Rohith013/chesstournamentmanager-website" target="_blank" rel="noopener noreferrer">Website on GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2>Legal</h2>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="privacy.html#data-deletion">Data Deletion Guide</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="mailto:gamewingssupport@gmail.com">gamewingssupport@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Game Wings Support. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; opacity: 0.7;">Version 1.0.1 | Built with Flutter</p>
+                <p class="footer-bottom-sub">Version 1.1.3 &middot; Built with Flutter &middot; Independent software (not officially affiliated with FIDE)</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
